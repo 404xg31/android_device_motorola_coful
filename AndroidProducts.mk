@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)twrp_coful.mk
+    device/motorola/coful/twrp_coful.mk
 
 COMMON_LUNCH_CHOICES := \
     twrp_coful-user \
