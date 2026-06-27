@@ -6,6 +6,10 @@
 #
 
 LOCAL_PATH := device/motorola/coful
+
+# OrangeFox Configuration
+$(call inherit-product, vendor/orangefox/config/common.mk)
+
 # A/B
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
