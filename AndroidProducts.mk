@@ -6,9 +6,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/fox_coful.mk
+    $(LOCAL_DIR)/omni_coful.mk
 
 COMMON_LUNCH_CHOICES := \
-    fox_coful-user \
-    fox_coful-userdebug \
-    fox_coful-eng
+    omni_coful-user \
+    omni_coful-userdebug \
+    omni_coful-eng
