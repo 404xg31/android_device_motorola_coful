@@ -9,7 +9,7 @@ $(call inherit-product, vendor/orangefox/config/common.mk)
 $(call inherit-product, device/motorola/coful/device.mk)
 
 PRODUCT_DEVICE := coful
-PRODUCT_NAME := fox_coful
+PRODUCT_NAME := twrp_coful
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g31
 PRODUCT_MANUFACTURER := motorola
