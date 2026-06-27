@@ -36,6 +36,9 @@ fi
 
 if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 
+ 
+  
+  
   # Version & Variant
  export FOX_VERSION="R12.1"
  export FOX_VARIANT="A12"
