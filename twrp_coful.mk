@@ -1,37 +1,25 @@
-#
 # Copyright (C) 2026 The Android Open Source Project
-# Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
-#
 # SPDX-License-Identifier: Apache-2.0
-#
-##Define​ hardware platform
-PRODUCT_RELEASE_NAME := coful
 
-##Device​ path for OEM device tree
-DEVICE_PATH := device/motorola/coful
+# Inherit OrangeFox configuration
+$(call inherit-product, vendor/orangefox/config/common.mk)
 
-##Inherit​ any OrangeFox-specific settings
-$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
-
-# Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
-
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common
-
-# Inherit from coful device
+# Inherit device setup
 $(call inherit-product, device/motorola/coful/device.mk)
 
-PRODUCT_DEVICE := coful
+# Device identifiers
 PRODUCT_NAME := twrp_coful
+PRODUCT_DEVICE := coful
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g31
 PRODUCT_MANUFACTURER := motorola
 
-PRODUCT_GMS_CLIENTID_BASE := android-motorola
+# 64-bit architecture
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-a
+TARGET_CPU_ABI := arm64-v8a
+TARGET_SUPPORTS_64_BIT_APPS := true
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="coful_g-user 12 S3RWBS32.125-29-2-4-3 3c754f release-keys"
-
-BUILD_FINGERPRINT := motorola/coful_g/coful:12/S3RWBS32.125-29-2-4-3/3c754f:user/release-keys
+# OrangeFox specific
+FOX_VERSION := R12.1
+FOX_BUILD_DEVICE := coful
