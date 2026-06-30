@@ -5,7 +5,7 @@
 PRODUCT_RELEASE_NAME := coful
 
 ##Device​ path for OEM device tree
-DEVICE_PATH := devie/motorola/coful
+DEVICE_PATH := device/motorola/coful
 
 ##Inherit​ any OrangeFox-specific settings
 $(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
