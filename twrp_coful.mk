@@ -2,7 +2,7 @@ orangefoxefoxyright (C) 2026 The Android Open Source Project
 # SPDX-License-Identifier: Apache-2.0
 
 # Inherit OrangeFox configuration
-$(call inherit-product, vendor/twrp/config/common.mk)
+$(call inherit-product, vendor/orangefox/config/common.mk)
 
 # Inherit device setup
 $(call inherit-product, device/motorola/coful/device.mk)
