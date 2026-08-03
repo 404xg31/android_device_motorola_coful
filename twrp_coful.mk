@@ -1,19 +1,18 @@
 #
+# Copyright (C) 2026 The Android Open Source Project
+# Copyright (C) 2026 SebaUbuntu's TWRP device tree generator
+#
 # SPDX-License-Identifier: Apache-2.0
+#
 
-##Define​ hardware platform
-PRODUCT_RELEASE_NAME := coful
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-##Device​ path for OEM device tree
-DEVICE_PATH := device/motorola/coful
+# Inherit some common Omni stuff.
+$(call inherit-product, vendor/omni/config/common.mk)
 
-##Inherit​ any OrangeFox-specific settings
-$(call inherit-product-if-exists, $(DEVICE_PATH)/fox_$(PRODUCT_RELEASE_NAME).mk)
-
-# Inherit OrangeFox configuration
-$(call inherit-product, vendor/orangefox/config/common.mk)
-
-# Inherit device setup
+# Inherit from coful device
 $(call inherit-product, device/motorola/coful/device.mk)
 
 PRODUCT_NAME := twrp_coful
