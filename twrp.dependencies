@@ -1,8 +1,8 @@
 [
   {
     "remote":      "TeamWin",
-    "repository":  "android_device_mtk_twrp-common",
-    "target_path": "device/mtk/twrp-common",
+    "repository":  "android_device_motorola_coful",
+    "target_path": "device/motorola/coful",
     "revision":    "android-12.1"
   }
-]qcom
+]
