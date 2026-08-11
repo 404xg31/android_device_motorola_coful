@@ -20,6 +20,3 @@ ro.crypto.volume.options=::v2
 
 # Partitions
 ro.boot.dynamic_partitions=true
-
-# Treble
-ro.treble.enabled=true
