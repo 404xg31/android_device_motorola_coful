@@ -12,7 +12,8 @@ OF_BIND_MOUNT_SDCARD_ON_FORMAT := 1
 
 
 # Maximum permissible splash image size (in kilobytes); do *NOT* increase
-OF_SPLASH_MAX_SIZ
+OF_SPLASH_MAX_SIZE := 128
+
 # Custom pic for maintainers about section info
 OF_MAINTAINER := 404xG31
 
