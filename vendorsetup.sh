@@ -41,7 +41,7 @@ export FOX_VARIANT="A12"
 export FOX_BUILD_TYPE="Unofficial"
 
 # OrangeFox Addons
-export FOX_ENABLE_APP_MANAGER=1
+export FOX_ENABLE_APP_MANAGER=0
 
 # Binaries & Tools
 export FOX_USE_BASH_SHELL=1
